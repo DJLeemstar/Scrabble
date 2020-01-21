@@ -1,0 +1,52 @@
+Classes: N/A ()
+
+Actions that will be needed:
+
+- Introduce Game
+
+	Structures:
+	- Procedure; Called from Main. (Call this "MyMain" or similar)
+	- Call other Methods; All other areas are called from here.
+	- Short + Simple.
+
+- Randomise 7 Characters
+	
+	Structures needed (MUST use Arrays, not Dicts/Lists):
+	- Array containing every character; Ensure they are limited as in Scrabble. 
+	- Random; 
+	- WriteLine; Show them to the user.
+	
+	- Pass this by Ref to change the original array. Function.
+
+- Intake input from the user and check if the word can be made with the characters
+	
+	Structures:
+	- "For i In"; Iterate input characters.
+	- "If... In"; If returns false, then have function return that. 
+	- "Else"... It has returned true, and the user has entered a correct word.
+
+	- Return boolean by value. Function.
+	- THIS WILL BE THE MODULE USED FOR THE PSEUDOCODE.
+ 
+- Add the value of the letters together.
+
+	Structures:
+	- Procedure; Parameter of the array passed, as well as total value.
+	- WriteLine; Print total value and how many were gained from current word.
+
+Extension:
+
+- Assign online Dictionary API
+- Remove spaces from inputs
+
+Context Info::
+
+(1 point)-A, E, I, O, U, L, N, S, T, R
+(2 points)-D, G
+(3 points)-B, C, M, P
+(4 points)-F, H, V, W, Y
+(5 points)-K
+(8 points)- J, X
+(10 points)-Q, Z
+
+- Passing by ref is ideal for arrays by sending the whole array instead of one value.
