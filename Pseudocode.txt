@@ -1,0 +1,14 @@
+FUNCTION wordTrue (STRING input, ARRAY randomLetters)
+
+	STRING usableInput = UPPERCASE input
+	ARRAY duplicateLetters = randomLetters
+
+	FOR letter IN RANGE(LENGTH OF useableInput)
+
+		IF duplicateLetters DOESNT CONTAIN useableInput[letter]
+			RETURN false
+
+		REMOVE useableInput[letter] FROM duplicateLetters
+	
+	RETURN true
+	
